@@ -1,7 +1,7 @@
 🌱 Nabat.AI — نبات
 Your pocket agronomist. In your language. In your field.
 
-Built at Hack Days Agadir — Google Developer Group × MLH × Universiapolis Agadir
+Built at Hack Days Agadir — TECH EVO LAB x Google Developer Group × MLH × Universiapolis Agadir
 
 
 The Problem
