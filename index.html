@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nabat.AI - نبات | Your Pocket Agronomist</title>
+  <meta name="description"
+    content="AI-powered agricultural advisor for Moroccan farmers. Diagnose crop diseases, get market prices, and expert advice in Darija, French, and Arabic." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="brand-icon">🌱</div>
+        <span class="brand-name">Nabat<span class="brand-dot">.AI</span></span>
+        <span class="brand-arabic">نبات</span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+        <a href="#features" class="nav-link" data-section="features">Features</a>
+        <a href="#chat" class="nav-link" data-section="chat">Diagnosis</a>
+        <a href="#market" class="nav-link" data-section="market">Market</a>
+        <a href="#architecture" class="nav-link" data-section="architecture">Architecture</a>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Hack Days Agadir 2026 — GDG × MLH × Universiapolis
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Your Pocket</span>
+        <span class="title-line gradient-text">Agronomist</span>
+        <span class="title-line arabic-accent">مستشارك الفلاحي</span>
+      </h1>
+      <p class="hero-subtitle">
+        1.5 million farmers. 0 agronomists within reach.<br />
+        Nabat.AI sees your crops, speaks your language, knows your market.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number" data-target="1500000">0</span>
+          <span class="stat-label">Moroccan Farmers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">70%</span>
+          <span class="stat-label">Veggie Exports from Souss-Massa</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">8s</span>
+          <span class="stat-label">Diagnosis Time</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#chat" class="btn btn-primary">
+          <span>🔬</span> Start Diagnosis
+        </a>
+        <a href="#features" class="btn btn-secondary">
+          <span>🎬</span> See How It Works
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen" id="phone-demo">
+          <div class="demo-chat">
+            <div class="demo-msg farmer">chwiya d tomatich bdat tsfar 🍅</div>
+            <div class="demo-msg ai">
+              <div class="demo-typing">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">4-Stage Reasoning Chain</h2>
+        <p class="section-subtitle">Not a chatbot — a structured diagnostic pipeline powered by Gemini</p>
+      </div>
+      <div class="pipeline-visual">
+        <div class="pipeline-stage" data-stage="2A">
+          <div class="stage-icon">👁️</div>
+          <div class="stage-number">Stage 2A</div>
+          <h3>Visual Decomposition</h3>
+          <p>Describe all symptoms: color, texture, distribution, severity — before any diagnosis</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-stage" data-stage="2B">
+          <div class="stage-icon">🔍</div>
+          <div class="stage-number">Stage 2B</div>
+          <h3>Differential Diagnosis</h3>
+          <p>3 ranked causes with evidence, likelihood, and ruling features</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-stage" data-stage="2C">
+          <div class="stage-icon"></div>
+          <div class="stage-number">Stage 2C</div>
+          <h3>Contextual Narrowing</h3>
+          <p>Filter by Souss-Massa region, season, weather, irrigation method</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-stage" data-stage="2D">
+          <div class="stage-icon">💊</div>
+          <div class="stage-number">Stage 2D</div>
+          <h3>Action Synthesis</h3>
+          <p>Intervention steps with Moroccan products, prices in Dirhams</p>
+        </div>
+      </div>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <div class="feature-icon">📸</div>
+          <h3>Vision-Powered</h3>
+          <p>Upload a photo of your crop — Gemini analyzes every visual detail</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗣️</div>
+          <h3>Speaks Darija</h3>
+          <p>Type in Darija, French, or Arabic — get answers in your language</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Market Intelligence</h3>
+          <p>Real Agadir souk prices, export trends, and timing advice</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Ethical AI</h3>
+          <p>Confidence levels, disclaimers, and honest "I don't know" when uncertain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAT / DIAGNOSIS SECTION -->
+  <section id="chat" class="chat-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Live Diagnosis</span>
+        <h2 class="section-title">Ask Nabat.AI</h2>
+        <p class="section-subtitle">Upload a photo or describe your crop problem in any language</p>
+      </div>
+      <div class="chat-container">
+        <div class="chat-sidebar">
+          <div class="sidebar-section">
+            <h4>🌾 Farmer Profile</h4>
+            <div class="profile-field">
+              <label>Name</label>
+              <input type="text" id="farmer-name" placeholder="e.g., Ahmed" value="Ahmed" />
+            </div>
+            <div class="profile-field">
+              <label>Location</label>
+              <input type="text" id="farmer-location" placeholder="e.g., Taroudant" value="Souss-Massa" />
+            </div>
+            <div class="profile-field">
+              <label>Crop</label>
+              <select id="farmer-crop">
+                <option value="tomato" selected>🍅 Tomatoes</option>
+                <option value="pepper">🌶️ Peppers</option>
+                <option value="citrus">🍊 Citrus</option>
+                <option value="courgette">🥒 Courgettes</option>
+                <option value="greenbeans">🫘 Green Beans</option>
+                <option value="argan">🌳 Argan</option>
+              </select>
+            </div>
+            <div class="profile-field">
+              <label>Language</label>
+              <select id="farmer-lang">
+                <option value="darija" selected>🇲🇦 Darija</option>
+                <option value="french">🇫🇷 French</option>
+                <option value="arabic">🇸🇦 العربية</option>
+              </select>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <h4>📈 Market Snapshot</h4>
+            <div class="market-mini">
+              <div class="market-row"><span>🍅 Tomato</span><span class="price up">3.8 DH/kg ↑</span></div>
+              <div class="market-row"><span>🌶️ Pepper</span><span class="price down">5.2 DH/kg ↓</span></div>
+              <div class="market-row"><span>🥒 Courgette</span><span class="price up">4.1 DH/kg ↑</span></div>
+              <div class="market-row"><span>🍊 Citrus</span><span class="price stable">6.5 DH/kg →</span></div>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <h4>🔑 API Key</h4>
+            <div class="profile-field">
+              <input type="password" id="api-key" placeholder="Gemini API Key" />
+              <small>Get yours at <a href="https://aistudio.google.com/apikey" target="_blank">AI Studio</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="chat-main">
+          <div class="chat-messages" id="chat-messages">
+            <div class="message ai">
+              <div class="message-avatar">🌱</div>
+              <div class="message-content">
+                <div class="message-text">
+                  <p><strong>Salam! Ana Nabat.AI</strong> 🌿</p>
+                  <p>Mrhba bik! I'm your pocket agronomist for the Souss-Massa region. I can help you with:</p>
+                  <ul>
+                    <li>📸 <strong>Crop diagnosis</strong> — upload a photo</li>
+                    <li>💬 <strong>Expert advice</strong> — ask in Darija, French, or Arabic</li>
+                    <li>📊 <strong>Market prices</strong> — real-time souk intelligence</li>
+                  </ul>
+                  <p>Sift liya photo wlla kteb liya mochkiltek! 🍅</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="diagnosis-stages" id="diagnosis-stages" style="display:none;">
+            <div class="stage-progress">
+              <div class="stage-step" data-step="2A"><span>2A</span> Observe</div>
+              <div class="stage-step" data-step="2B"><span>2B</span> Hypothesize</div>
+              <div class="stage-step" data-step="2C"><span>2C</span> Context</div>
+              <div class="stage-step" data-step="2D"><span>2D</span> Action</div>
+            </div>
+          </div>
+          <div class="chat-input-area">
+            <div class="image-preview" id="image-preview" style="display:none;">
+              <img id="preview-img" src="" alt="Preview" />
+              <button id="remove-image" class="remove-btn">×</button>
+            </div>
+            <div class="chat-input-row">
+              <label for="image-upload" class="upload-btn" title="Upload crop photo">
+                📷
+                <input type="file" id="image-upload" accept="image/*" hidden />
+              </label>
+              <input type="text" id="chat-input" placeholder="Kteb mochkiltek hna... / Écrivez ici... / اكتب هنا..."
+                autocomplete="off" />
+              <button id="send-btn" class="send-btn" title="Send">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 2L11 13" />
+                  <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+                </svg>
+              </button>
+            </div>
+            <div class="chat-hints">
+              <button class="hint-chip" data-hint="chwiya d tomatich bdat tsfar, wach khayba?">🍅 Darija demo</button>
+              <button class="hint-chip" data-hint="Mes tomates ont des taches jaunes, que faire?">🇫🇷 French
+                demo</button>
+              <button class="hint-chip" data-hint="هل يجب أن أسقي الطماطم اليوم مع الحرارة الشديدة؟">🇸🇦 Arabic
+                demo</button>
+              <button class="hint-chip" data-hint="What are tomato prices this week in Agadir?">📊 Market</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET SECTION -->
+  <section id="market" class="market-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Market Intelligence</span>
+        <h2 class="section-title">Agadir Souk Prices</h2>
+        <p class="section-subtitle">Real-time wholesale prices from Souss-Massa markets</p>
+      </div>
+      <div class="market-grid">
+        <div class="market-card tomato">
+          <div class="market-card-icon">🍅</div>
+          <h3>Tomatoes</h3>
+          <div class="market-price">3.8 <small>DH/kg</small></div>
+          <div class="market-trend up">↑ +12% this week</div>
+          <div class="market-bar">
+            <div class="bar-fill" style="width:75%"></div>
+          </div>
+          <small>Export premium: Active 🟢</small>
+        </div>
+        <div class="market-card pepper">
+          <div class="market-card-icon">🌶️</div>
+          <h3>Peppers</h3>
+          <div class="market-price">5.2 <small>DH/kg</small></div>
+          <div class="market-trend down">↓ -5% this week</div>
+          <div class="market-bar">
+            <div class="bar-fill" style="width:60%"></div>
+          </div>
+          <small>Export premium: Inactive 🔴</small>
+        </div>
+        <div class="market-card courgette">
+          <div class="market-card-icon">🥒</div>
+          <h3>Courgettes</h3>
+          <div class="market-price">4.1 <small>DH/kg</small></div>
+          <div class="market-trend up">↑ +8% this week</div>
+          <div class="market-bar">
+            <div class="bar-fill" style="width:65%"></div>
+          </div>
+          <small>Export premium: Active 🟢</small>
+        </div>
+        <div class="market-card citrus">
+          <div class="market-card-icon">🍊</div>
+          <h3>Citrus</h3>
+          <div class="market-price">6.5 <small>DH/kg</small></div>
+          <div class="market-trend stable">→ Stable</div>
+          <div class="market-bar">
+            <div class="bar-fill" style="width:82%"></div>
+          </div>
+          <small>Season ending soon ⚠️</small>
+        </div>
+      </div>
+      <div class="metric-comparison">
+        <div class="metric-box old">
+          <div class="metric-value">500 DH + 3 days</div>
+          <div class="metric-label">Traditional Agronomist Visit</div>
+        </div>
+        <div class="metric-vs">VS</div>
+        <div class="metric-box new">
+          <div class="metric-value">0 DH + 8 seconds</div>
+          <div class="metric-label">Nabat.AI Diagnosis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE SECTION -->
+  <section id="architecture" class="arch-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Technical Architecture</span>
+        <h2 class="section-title">Built on Google Cloud</h2>
+        <p class="section-subtitle">Live infrastructure — not a prototype</p>
+      </div>
+      <div class="arch-grid">
+        <div class="arch-card">
+          <div class="arch-icon">🧠</div>
+          <h3>Vertex AI</h3>
+          <p>Gemini 2.0 Flash — Vision + Multilingual + Structured Output</p>
+        </div>
+        <div class="arch-card">
+          <div class="arch-icon">🚀</div>
+          <h3>Cloud Run</h3>
+          <p>Serverless container — auto-scales to demand</p>
+        </div>
+        <div class="arch-card">
+          <div class="arch-icon">🔥</div>
+          <h3>Firestore</h3>
+          <p>Session checkpoints — token rupture prevention</p>
+        </div>
+        <div class="arch-card">
+          <div class="arch-icon">📦</div>
+          <h3>Cloud Storage</h3>
+          <p>Crop image storage — visual history for each farmer</p>
+        </div>
+      </div>
+      <div class="arch-flow">
+        <div class="flow-step">📱 Farmer</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">🌐 Frontend</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">☁️ Cloud Run</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">🧠 Gemini API</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">📋 Structured JSON</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-icon">🌱</span>
+          <span>Nabat<span class="brand-dot">.AI</span> — نبات</span>
+        </div>
+        <p>Tech Evo Lab</p><br />
+        <p>Built with ❤️ for Moroccan farmers at Hack Days Agadir 2026</p><br />
+        <p>Contact us: techevolab@gmail.com</p>
+        <p class="footer-orgs">Google Developer Group • MLH • Universiapolis Agadir</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
