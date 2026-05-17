@@ -12,10 +12,10 @@ nabat.ai changes that.
 What It Does
 nabat.ai is a multimodal AI agricultural advisor built specifically for Moroccan farmers in the Souss-Massa region. It:
 
-📸 Sees your crops — upload a photo of a diseased leaf or plant, get a structured diagnosis in seconds
-🗣️ Speaks your language — full support for Darija, French, Standard Arabic, and code-switched registers
-📊 Knows your market — recommendations grounded in real Agadir souk prices (in Dirhams)
-🧠 Reasons like an expert — 4-stage visual diagnosis chain, not a simple chatbot
+* Sees your crops — upload a photo of a diseased leaf or plant, get a structured diagnosis in seconds
+* Speaks your language — full support for Darija, French, Standard Arabic, and code-switched registers
+* Knows your market — recommendations grounded in real Agadir souk prices (in Dirhams)
+*  Reasons like an expert — 4-stage visual diagnosis chain, not a simple chatbot
 
 
 Features
