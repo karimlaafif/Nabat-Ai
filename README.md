@@ -1,48 +1,29 @@
-# Nabat-Ai
+🌱 Nabat.AI — نبات
+Your pocket agronomist. In your language. In your field.
+
+Built at Hack Days Agadir — Google Developer Group × MLH × Universiapolis Agadir
 
 
-نبات.AI — نموذج محادثة متقدم
+The Problem
+1.5 million farmers. 0 agronomists within reach.
+Souss-Massa produces 70% of Morocco's vegetable exports. A single misdiagnosed crop disease costs an average of 40% yield loss. Farmers make critical decisions alone — in Darija, under the sun, with no expert in sight.
+nabat.ai changes that.
 
-نبات.AI هو نموذج محادثة متقدم تم تطويره باستخدام مكتبة LangChain وخوارزمية Hugging Face Transformers . يهدف إلى توفير معلومات دقيقة ومحدثة للمستخدمين.
+What It Does
+nabat.ai is a multimodal AI agricultural advisor built specifically for Moroccan farmers in the Souss-Massa region. It:
 
-الميزات
-
-• توفير إجابات دقيقة ومحدثة
-• تحليل السياق وفهم النوايا
-• دعم لغات متعددة
-• التعلم المستمر والتكيف
-
-التثبيت
-
-1. استنساخ المستودع
-
-git clone <repository-url>
-cd nabat-ai
-
-2. تثبيت التبعيات
-
-pip install -r requirements.txt
-
-3. تحميل النموذج
-
-python download_model.py
-
-تشغيل
-
-python app.py
-
-الاتصال
-
-POST /chat
-
-Body:
-{
-    "message": "مرحباً"
-}
-
-Response:
+📸 Sees your crops — upload a photo of a diseased leaf or plant, get a structured diagnosis in seconds
+🗣️ Speaks your language — full support for Darija, French, Standard Arabic, and code-switched registers
+📊 Knows your market — recommendations grounded in real Agadir souk prices (in Dirhams)
+🧠 Reasons like an expert — 4-stage visual diagnosis chain, not a simple chatbot
 
 
-    "reply": "أهلاً بك! كيف يمكنني مساعدتك اليوم؟",
-    "language": "Arabic",
-    "confidence": 0.98
+Features
+
+Accurate, up-to-date agricultural diagnoses
+Context analysis and intent understanding
+Full multilingual support: Darija · French · العربية
+Continuous learning and regional adaptation
+Structured JSON output with intervention steps
+Session memory with crash recovery
+
